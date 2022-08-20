@@ -2,6 +2,8 @@
 nah='git reset --hard;git clean -df'
 
 #Laravel
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+
 artisan() {
   if [ -f bin/artisan ]; then
     sail php bin/artisan "$@"
