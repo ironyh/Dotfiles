@@ -1,3 +1,6 @@
+export ZSH="${HOME}/.oh-my-zsh"
+
+#Aliases
 alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
 alias sdown='bash vendor/bin/sail down'
 alias sa='bash vendor/bin/sail artisan'
@@ -30,4 +33,9 @@ sailinit() {
 }
 
 #Plugins
-plugins=(zsh-autosuggestions)
+plugins=( zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+# Set colors for LS_COLORS.
+eval `dircolors ~/.dircolors`
