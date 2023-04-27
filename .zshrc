@@ -33,7 +33,9 @@ sailinit() {
 }
 
 #Plugins
-plugins=( zsh-autosuggestions)
+plugins=( zsh-autosuggestions git zsh-syntax-highlighting )
+
+export ZSH="${HOME}/.oh-my-zsh"
 
 source $ZSH/oh-my-zsh.sh
 
