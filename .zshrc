@@ -1,8 +1,14 @@
 # Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="cloud"
+export ZSH="${HOME}/.oh-my-zsh"
 
-# zsh-nvm and zsh-autosuggestions must be installed separately
-plugins=(git zsh-nvm zsh-autosuggestions)
+# Theme.
+ZSH_THEME="spaceship"
+export SPACESHIP_DIR_TRUNC=0
+
+# Plugins.
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+# Set colors for LS_COLORS.
+eval `dircolors ~/.dircolors`
