@@ -28,6 +28,10 @@ git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
 cd $FONT_DIR
 ./install.sh
 
+echo "Installing laravel sail plugin"
+git clone https://github.com/ariaieboy/laravel-sail ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/laravel-sail
+
+
 echo "Setting up the Spaceship theme."
 ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
 git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1

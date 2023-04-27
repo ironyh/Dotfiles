@@ -33,7 +33,7 @@ sailinit() {
 }
 
 #Plugins
-plugins=( zsh-autosuggestions git zsh-syntax-highlighting )
+plugins=( zsh-autosuggestions git zsh-syntax-highlighting laravel-sail )
 
 export ZSH="${HOME}/.oh-my-zsh"
 
