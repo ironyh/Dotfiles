@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 create_symlinks() {
     # Get the directory in which this script lives.
     script_dir=$(dirname "$(readlink -f "$0")")
@@ -19,14 +18,5 @@ create_symlinks() {
 
 create_symlinks
 
-echo "Installing fonts."
-FONT_DIR="$HOME/.fonts"
-git clone https://github.com/powerline/fonts.git $FONT_DIR --depth=1
-cd $FONT_DIR
 
-./install.sh
-
-echo "Setting up the Spaceship theme."
-ZSH_CUSTOM="$HOME/.oh-my-zsh/custom"
-git clone https://github.com/spaceship-prompt/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
-ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
+apt-get install zsh
