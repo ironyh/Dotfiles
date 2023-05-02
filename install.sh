@@ -19,4 +19,4 @@ create_symlinks() {
 create_symlinks
 
 
-apt-get install zsh
+apt install zsh
