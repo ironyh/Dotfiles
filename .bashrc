@@ -7,5 +7,3 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-dpa="docker exec -it --user sail nurrse-app php artisan"
-dnpm="docker exec -it --user sail nurrse-app npm"
