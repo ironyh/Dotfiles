@@ -36,5 +36,5 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 #plugins=(zsh-autosuggestions history-substring-search zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
